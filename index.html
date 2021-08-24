@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayson's Website</title>
+  </head>
+  <body>
+
+    <canvas id="bg"></canvas>   
+
+    <div class="falling-leaves"></div>
+
+    <nav>
+      <ul class="left">
+        <li><a data-scroll href="#about-me"><i class="fa fa-user"></i> About Me</a></li>
+        <li><a data-scroll href="#work-history"><i class="fa fa-briefcase"></i> Work History</a></li>
+        <li><a data-scroll href="#projects"><i class="fa fa-desktop"></i> Projects</a></li>
+        <li><a data-scroll href="#contact-info"><i class="fa fa-phone"></i> Contact Info</a></li>
+        <li><a href="https://drive.google.com/file/d/1NoZg46HIyEpRfxI9QxCBOVgLblQpFlwp/view?usp=sharing" target="_blank"><i class="fa fa-file"></i> Resume</a></li>
+      </ul>
+    </nav> 
+
+    <button onclick='window.scrollTo({top: 0, behavior: "smooth"});' id="myBtn" title="Go to top">
+      <!-- <a data-scroll href="#"> -->
+        <i class="fa fa-arrow-up"></i>
+      <!-- </a> -->
+    </button>
+
+    <main>
+        <header>
+          <h1>Jayson Infante</h1>
+          <p>🚀 Welcome to my website!</p>
+        </header>
+
+
+
+        <blockquote id="item2" class="left">
+          <p>I enjoy playing the guitar 🎸, singing 🎤 and longboarding 🛹!</p>
+        </blockquote>
+  
+        <section id="about-me">
+          <h2>📜 About Me</h2>
+          <p>
+            I am currently a 5/5 Cooperative Education Student at Stevens Institute of Technology majoring in Computer Science with a minor in Mathematics set to graduate in May 2022.
+          </p>
+  
+          <p>
+            I have a variety of industry experience including Quality Assurance, Business Continuity Planning, Software Engineering, and Data Analytics. 
+            However, my primary technical interests revolve around Full-Stack Web Development and DevOps related solutions.
+          </p>
+  
+          <p>
+            At Stevens, I am a member of the Filipino Association at Stevens Tech and the Society of Asian Scientists and Engineers. 
+            Outside of school, my hobbies include playing the guitar, singing, longboarding, watching Anime/NBA games and lifting!
+          </p>
+
+          <!-- Link my resume in the word "here" -->
+          <p>
+            Check out my resume <a href="https://drive.google.com/file/d/1NoZg46HIyEpRfxI9QxCBOVgLblQpFlwp/view?usp=sharing" target="_blank">here</a>.
+          </p>
+  
+        </section>
+  
+        <section class="left" id="work-history">
+          <h2>🖥️ Work History</h2>
+          
+          <button class="accordion">
+              PNC | Technology & Innovation Intern
+          </button>
+
+          <div class="panel">
+            <h4>May 2021 - July 2021 | Pittsburgh, PA</h4>
+            <ul class="margin-top">
+              <li>
+                Aided the Business Intelligence/Analytics team in transitioning users to a
+                JupyterHub/Slurm environment for improved resource control
+              </li>
+              <li>
+                Analyzed memory usage from Data Science teams to optimize memory
+                allocation requests utilizing Slurm, MySQL, and Bash
+              </li>
+              <li>
+                Developed automated data collection scripts to analyze key metrics with Python and Pandas
+              </li>
+              <li>
+                Participated in extracurricular Shark Tank activity to transform the lending and transacting experience for students with a focus 
+                on short term borrowing, purchasing methods and person to person payments
+              </li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+           Network to Code | Software Engineer Co-op
+          </button>
+
+          <div class="panel">
+            <h4>August 2020 - January 2021 | New York, NY</h4>
+
+            <ul class="margin-top">
+              <li>
+                Developed a Course Management System plug-in for internal company usage
+                within a Linux environment with Django and Ansible
+              </li>
+              <li>
+                Built internal chat bot features utilizing Python and Slack API
+              </li>
+              <li>
+                Followed CI/CD principles by using tools such as Travis CI, AWS EC2, and
+                Docker while deploying code
+              </li>
+              <li>
+                Created documentation focusing on chatbot setup for internal company hackathon used by 70+ employees
+              </li>
+              <li>
+                Revised training material slides for classes revolving around Network Programming and Automation
+              </li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+            Crédit Agricole | Business Continuity Planning Co-op
+           </button>
+
+          <div class="panel">
+            <h4>September 2019 - December 2020 | New York, NY</h4>
+
+            <ul class="margin-top">
+              <li>
+                Executed documented disaster recovery strategies and operated Microsoft
+                Excel to compare the company’s test data from previous years
+              </li>
+              <li>
+                Created quarterly test updates for the BCP plan and held meetings with
+                Directors from each group to ensure that the applications within each group
+                are working with the company’s backup systems
+              </li>
+              <li>
+                Managed and updated online databases (DREAMS, Send Word Now)
+              </li>
+              <li>
+                Traveled to backup building in Metropark, NJ to ensure all systems were working correctly
+              </li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+            Numerix | Quality Assurance Co-op
+           </button>
+          
+          <div class="panel">
+            <h4>January 2019 - May 2020 | New York, NY</h4>
+
+            <ul class="margin-top">
+              <li>
+                Contributed in regular status meetings to state any bugs, problems or risks
+              </li>
+              <li>
+                Executed functional and regression test cases with different platforms (Linux, Windows XP, 7, 8, and 10) in order to track any potential defects
+              </li>
+              <li>
+                Cooperated with the Development Team in order to resolve any difficulties encountered in test executions
+              </li>
+              <li>
+                Implemented test-plans and test-cases built on high-leveled and detailed design
+              </li>
+            </ul>
+          </div>
+
+  
+        </section>
+
+        <section id="projects">
+
+          <h2>👩🏽‍🚀 Projects</h2>
+
+          <button class="accordion">
+            Card Game | Web App
+          </button>
+
+          <div class="panel">
+            <h4>Node.js, React.js, Socket.io</h4>
+
+            <ul class="margin-top">
+              <li>Web application that allows two users to text chat while playing the card game <i>War</i></li>
+              <li>Utilized <b>Socket.io</b> for real-time updates and bi-directional communication for both the card game and text chat</li>
+              <li>Future steps include the implementation of user authentication and live leaderboards</li>
+            </ul>
+          </div>
+          
+          <button class="accordion">
+            WhereRU | Mobile App
+          </button>
+
+          <div class="panel">
+            <h4>Dart, Flutter</h4>
+
+            <ul class="margin-top">
+              <li>Mobile application for students to optimize commute paths throughout Rutgers New Brunswick</li>
+              <li>Developed front-end (Rest API calls, Web Forms) for both iOS and Android with one codebase using <b>Flutter</b> to create a cross-platform application</li>
+              <li>Utilized <b>Google Maps Flutter package</b> to visualize user's current geolocation and commute path</li>
+              <li>Back-end team utilized <b>Google Maps API</b> to find walking path from one bus stop to another and <b>TransLoc real-time bus API</b> to find all Rutgers bus schedules, paths, and bus stops</li>
+              <li>Initiated the project with a team of 4 at Fall 2019 HackRU and was continued afterwards</li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+            Course Catalog | Web App
+          </button>
+
+          <div class="panel">
+            <h4>HTML, CSS/Bootstrap, JavaScript, Firebase</h4>
+
+            <ul class="margin-top">
+              <li>Developed a prototype Course Catalog web application for Stevens Institute of Technology</li>
+              <li>Implemented an efficient and user-friendly version of the current Stevens Course Catalog (600+ Page PDF), effectively reducing the amount of time browsing for a course by 82% (Based on two usablity tests)</li>
+              <li>Leveraged <b>Firebase</b> to allow real-time posting for Course Reviews</li>
+              <li>Utilized an iterative approach and various processes to complete the project, such as surveys, user stories/personas, paper prototyping, mockups, and usability testing</li>
+              <li>Emphasized various HCI concepts such as PAR, Nielsen's Design Heuristics, Microinteractions, and Tidwell's Patterns</li>
+              <li>Future steps feature greater accessibility for visually impaired users and shareability functions to send information for a given class to an email/phone number</li> 
+              <li>Made for a <b>Human-Computer Interaction</b> class with a team of 4 people</li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+            Text Parser | CLI Program
+          </button>
+
+          <div class="panel">
+            <h4>Python</h4>
+
+            <ul class="margin-top">
+              <li>Developed a text parser for GEDCOM genealogy files (Text files that describe the structure of family trees) in order to check for errors and anomalies within the data</li>
+              <li>Integrated and emphasized industry-standard agile methods such as <b>Extreme Programming</b> and <b>Scrum</b> throughout the development of the software solution</li>
+              <li>Utilized an iterative approach and various processes/tools to complete the project, such as sprints, burndown charts, user stories, sprint reviews and continuous integration</li>
+              <li>Made for an <b>Agile Methods for Software Development</b> class with a team of 4 people</li>
+            </ul>
+          </div>
+
+          <button class="accordion">
+            Train Delay Notifier | Automation Script
+          </button>
+
+          <div class="panel">
+            <h4>Node.js, Twilio, Twitter API, Heroku</h4>
+            
+            <ul class="margin-top">
+              <li>Automation script used to get real-time SMS messages about train delays on the Northeast Corridor</li>
+              <li>Used <b>Node.js</b> to pass private environment variables (Twitter Developer/Twilio API keys)</li>
+              <li>Used <b>Twitter API</b> to grab tweets from NJ Transit's Northeast Corridor twitter page relating to delays or cancellations</li>
+              <li>Used <b>Twilio API</b> to send pertinent information from tweets to my phone number</li>
+            </ul>
+          </div>
+  
+        </section>
+  
+  
+        <section class="left" id="contact-info">
+          <h2>☎️ Contact Information</h2>
+
+          <p>
+            Feel free to reach out to me through any of the mediums linked below! 
+          </p>
+          <ul class="margin-top">
+            <li>
+              Email: jayson.infante708@gmail.com
+            </li>
+            <li> 
+              <a href="https://www.linkedin.com/in/jaysoninfante708/" target="_blank">LinkedIn</a>
+            </li>
+            <li> 
+              <a href="https://github.com/jinfante708" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1NoZg46HIyEpRfxI9QxCBOVgLblQpFlwp/view?usp=sharing" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </section>
+      
+        <blockquote id="thanks">
+          <p>Thanks for visiting!</p>
+        </blockquote>
+
+    </main>
+    
+    <!-- <script type="module" src="/background.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="/smooth-scroll-master/dist/smooth-scroll.min.js"></script>
+    <script type="module" src="/accordion.js"></script>
+    <script type="module" src="/leaves.js"></script>
+    <script type="module" src="/models.js"></script>
+
+    <script>
+			var scroll = new SmoothScroll('a[href*="#"]', {
+				topOnEmptyHash: false
+			});
+    </script>    
+
+  </body>
+</html>
