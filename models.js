@@ -4,6 +4,8 @@
 import * as THREE from "./node_modules/three/build/three.module.js";
 import { Loader } from 'three';
 
+console.log("hello");
+
 // Scene is like a container that holds all of our objects, cameras, and lights
 const scene = new THREE.Scene();
 
