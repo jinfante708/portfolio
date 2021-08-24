@@ -1,6 +1,6 @@
 // import './style.css'
 
-import * as THREE from 'three';
+import * as THREE from '/node_modules/three';
 import { Loader } from 'three';
 
 // Scene is like a container that holds all of our objects, cameras, and lights
