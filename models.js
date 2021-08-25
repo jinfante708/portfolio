@@ -2,9 +2,31 @@
 
 // import * as THREE from 'three';
 import * as THREE from "./node_modules/three/build/three.module.js";
-import { Loader } from 'three';
 
-console.log("hello");
+import headshot from '/assets/Headshot.jpg';
+
+import longboard from '/assets/Square1/longboard.png';
+import crunch from '/assets/Square1/crunch.png';
+import acoustic from '/assets/Square1/acoustic.png';
+import electric from '/assets/Square1/electric.png';
+import music from '/assets/Square1/music.png';
+import basketball from '/assets/Square1/basketball.png';
+
+import bleach from '/assets/Square2/bleach.png';
+import ca from '/assets/Square2/ca.png';
+import compsci from '/assets/Square2/compsci.png';
+import flag from '/assets/Square2/flag.png';
+import sase from '/assets/Square2/sase.png';
+import stevens from '/assets/Square2/stevens.png';
+
+import ntc from '/assets/Square3/ntc.png';
+import numerix from '/assets/Square3/numerix.png';
+import pnc from '/assets/Square3/pnc.png';
+
+import agile from '/assets/Square4/agile.png';
+import card from '/assets/Square4/card.png';
+import rutgers from '/assets/Square4/rutgers.png';
+import transit from '/assets/Square4/transit.png';
 
 // Scene is like a container that holds all of our objects, cameras, and lights
 const scene = new THREE.Scene();
@@ -98,7 +120,7 @@ function addStar() {
 
 // Avatar
 
-const jaysonTexture = new THREE.TextureLoader().load('../assets/Headshot.jpg');
+const jaysonTexture = new THREE.TextureLoader().load('/assets/Headshot.jpg');
 const jayson = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
   new THREE.MeshBasicMaterial( { map: jaysonTexture } )
@@ -107,7 +129,7 @@ const jayson = new THREE.Mesh(
 scene.add(jayson);
 
 const quoteTexture = new THREE.TextureLoader();
-quoteTexture.setPath('../assets/Square1/');
+quoteTexture.setPath('/assets/Square1/');
 const quoteArray = [
   new THREE.MeshBasicMaterial( { map: quoteTexture.load('longboard.png') } ),
   new THREE.MeshBasicMaterial( { map: quoteTexture.load('crunch.png') } ),
@@ -124,7 +146,7 @@ const quote = new THREE.Mesh(
 scene.add(quote);
 
 const aboutMeTexture = new THREE.TextureLoader();
-aboutMeTexture.setPath('../assets/Square2/');
+aboutMeTexture.setPath('/assets/Square2/');
 const aboutMeArray = [
   new THREE.MeshBasicMaterial( { map: aboutMeTexture.load('bleach.png') } ),
   new THREE.MeshBasicMaterial( { map: aboutMeTexture.load('ca.png') } ),
@@ -147,8 +169,8 @@ var workTexture2 = new THREE.PlaneGeometry(2,2,1,1);
 
 workTexture2.applyMatrix4(new THREE.Matrix4().makeRotationY(Math.PI));
 
-var textureFrontOne = new THREE.TextureLoader().load('../assets/pnc.png');
-var textureBackTwo = new THREE.TextureLoader().load('../assets/ca.png');
+var textureFrontOne = new THREE.TextureLoader().load('/assets/Square3/pnc.png');
+var textureBackTwo = new THREE.TextureLoader().load('/assets/Square3/ca.png');
 
 var material1 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureFrontOne } );
 var material2 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureBackTwo } );
@@ -169,8 +191,8 @@ var workTexture4 = new THREE.PlaneGeometry(2,2,1,1);
 
 workTexture4.applyMatrix4(new THREE.Matrix4().makeRotationY(Math.PI));
 
-var textureFrontThree = new THREE.TextureLoader().load('../assets/ntc.png');
-var textureBackFour = new THREE.TextureLoader().load('../assets/numerix.png');
+var textureFrontThree = new THREE.TextureLoader().load('/assets/Square3/ntc.png');
+var textureBackFour = new THREE.TextureLoader().load('/assets/Square3/numerix.png');
 
 var material3 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureFrontThree } );
 var material4 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: textureBackFour } );
@@ -191,8 +213,8 @@ var projectTexture2 = new THREE.PlaneGeometry(2,2,1,1);
 
 projectTexture2.applyMatrix4(new THREE.Matrix4().makeRotationY(Math.PI));
 
-var projectTextureOne = new THREE.TextureLoader().load('../assets/Square3/card.png');
-var projectTextureTwo = new THREE.TextureLoader().load('../assets/Square3/rutgers.png');
+var projectTextureOne = new THREE.TextureLoader().load('/assets/Square4/card.png');
+var projectTextureTwo = new THREE.TextureLoader().load('/assets/Square4/rutgers.png');
 
 var material5 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: projectTextureOne } );
 var material6 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: projectTextureTwo } );
@@ -213,8 +235,8 @@ var projectTexture4 = new THREE.PlaneGeometry(2,2,1,1);
 
 projectTexture4.applyMatrix4(new THREE.Matrix4().makeRotationY(Math.PI));
 
-var projectTextureThree = new THREE.TextureLoader().load('../assets/Square3/agile.png');
-var projectTextureFour = new THREE.TextureLoader().load('../assets/Square3/transit.png');
+var projectTextureThree = new THREE.TextureLoader().load('/assets/Square4/agile.png');
+var projectTextureFour = new THREE.TextureLoader().load('/assets/Square4/transit.png');
 
 var material7 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: projectTextureThree } );
 var material8 = new THREE.MeshBasicMaterial( { color: 0xffffff, map: projectTextureFour } );
